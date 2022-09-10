@@ -1,0 +1,31 @@
+#include <stdlib.h>
+#include <stdio.h>
+
+int main()
+{
+    char nome[20], produto[20];
+    float valor, total;
+    int qtd;
+    printf ("Nome do cliente: ");
+    scanf ("%s",&nome);
+    printf ("\nQual produto: ");
+    scanf ("%s",&produto),
+    printf ("\nQUal o valor do produto: ");
+    scanf ("%f",&valor);
+    printf ("\nQuantidade de produto: ");
+    scanf ("%d",&qtd);
+    total=(valor*qtd);
+    printf("\n");
+    printf("===== RECIBO DE COMPRA =====");
+    printf("\nOla! %s ",nome);
+    printf("\n A compra de %d %s ficou em %.0f reais",qtd,produto,total");
+    if(total>1000)
+            {
+                printf("\nVolte sempre %s",nome);
+            }else{
+                    printf("\nNosso relacionamento poderia ser melhor");
+                 }
+    printf("\n");
+    system("pause");
+    return 0;
+}
